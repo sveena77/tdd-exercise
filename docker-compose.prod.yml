@@ -1,0 +1,5 @@
+services:
+  web:
+    build:
+      target: production
+    command: node build/index.js

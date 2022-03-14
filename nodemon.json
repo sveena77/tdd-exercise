@@ -1,0 +1,8 @@
+{
+  "verbose": true,
+  "ignore": [],
+  "watch": ["src/**/*.js"],
+  "env": {
+    "PORT": "3000"
+  }
+}

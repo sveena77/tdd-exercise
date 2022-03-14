@@ -1,0 +1,16 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    volumes:
+      - ./src:/home/node/app/src
+      - ./__test__:/home/node/app/__test__
+    container_name: exercises-docker
+    expose:
+      - '3000'
+    ports:
+      - '3000:3000'
+    # command: npm run dev
+    command: npm run test
