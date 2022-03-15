@@ -1,5 +1,5 @@
-import makeParagraph from '../entities/paragraph'
-import makeWord from '../entities/word'
+import makeParagraph from '../entities/Paragraph'
+import makeWord from '../entities/Word'
 
 export default function makeFindFirstShortestTextpart () {
   return function findFirstShortestTextpart (text, searchList) {

@@ -1,5 +1,5 @@
-import makeParagraph from './'
-import paragraphFixtures from '../../../../__test__/fixtures/paragraphs'
+import makeParagraph from '.'
+import paragraphFixtures from '../../../__test__/fixtures/paragraphs'
 
 describe('A Paragraph', () => {
   const maxLength = 200000

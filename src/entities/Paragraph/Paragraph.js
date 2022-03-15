@@ -1,4 +1,4 @@
-export default function buildMakeParagraph({ sanitize, makeWord }) {
+export default function buildMakeParagraph({ makeWord }) {
   return function makeParapraph(text = '') {
     const separator = ' '
     const maxParapraphLength = 200000
@@ -38,5 +38,11 @@ export default function buildMakeParagraph({ sanitize, makeWord }) {
       })
       return words
     }
+  }
+
+  function sanitize (text) {
+    return text
+      .replaceAll(/[^\w\s]/g, '') // removes all non word characters and keeps whitespaces
+      .replaceAll(/\s{2,}/g, ' ') // removes multiple whitespaces
   }
 }
