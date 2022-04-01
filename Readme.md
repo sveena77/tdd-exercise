@@ -9,7 +9,7 @@ npm run test
 ```
 
 ## Start the service
-### Run in development by babel-node via nodemon in a docker container
+### Run in development with tests by jest --watch in a docker container
 ```bash
 docker-compose up
 ```
